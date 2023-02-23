@@ -1,5 +1,3 @@
-import clsx from "clsx";
-
 type GlassPaneProps = {
   children: any;
   className: string;
@@ -8,10 +6,7 @@ type GlassPaneProps = {
 const GlassPane = ({ children, className }: GlassPaneProps) => {
   return (
     <div
-      className={clsx(
-        "glass rounded-2xl border-solid border-2 border-gray-200",
-        className
-      )}
+      className={`glass rounded-2xl border-solid border-2 border-gray-200 ${className}`}
     >
       {children}
     </div>
