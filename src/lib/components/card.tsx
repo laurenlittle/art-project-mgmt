@@ -1,6 +1,6 @@
 type CardProps = {
   children: any;
-  className: string;
+  className?: string;
 }
 
 const Card = ({ className, children }: CardProps) => {

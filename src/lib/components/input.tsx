@@ -1,6 +1,5 @@
-type InputProps = {
-  className: string;
-}
+export interface InputProps
+  extends React.HTMLAttributes<HTMLInputElement> {}
 
 const Input = ({ className, ...props }: InputProps) => {
   return (
